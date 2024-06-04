@@ -12,7 +12,9 @@ npm install
 npm run build
 git add . && commit -m "updates" && git push 
 git checkout origin/build
+git pull origin build
 git restore --source main build
+rm -rf docs && mv build docs
 git add . && commit -m "updates"
 git push origin HEAD:build
 git checkout main
