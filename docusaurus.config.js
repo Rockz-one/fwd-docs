@@ -94,7 +94,7 @@ module.exports = {
           routeBasePath: '/docs/',
           // Please change this to your repo.
           editUrl:
-            'https://github.com/Rockz-one/fwd-docs/site/edit/main/',
+            'https://github.com/Rockz-one/fwd-docs/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
