@@ -1,7 +1,7 @@
 const github = "https://github.com/Rockz-one/fwd-docs"
 const domain = "fwd.rockz.one"
 const URL    = "https://" + domain
-const website= "https://" + "rockz-one.github.io"
+const website= "https://rockz-one.github.io/fwd-docs/"
 
 module.exports = {
   title: 'fwd',

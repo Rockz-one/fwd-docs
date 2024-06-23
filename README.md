@@ -10,7 +10,7 @@ Hompage and docs for fwd
 git fetch origin
 npm install
 npm run build
-git add . && commit -m "updates" && git push 
+git add . && git commit -m "updates" && git push 
 git checkout origin/build
 git pull origin build
 git restore --source main build
