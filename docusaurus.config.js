@@ -1,11 +1,12 @@
 const github = "https://github.com/Rockz-one/fwd-docs"
 const domain = "fwd.rockz.one"
 const URL    = "https://" + domain
+const website= "https://" + "rockz-one.github.io"
 
 module.exports = {
   title: 'fwd',
   tagline: 'Forward services to the internet over ssh. Fast & simple',
-  url: URL,
+  url: website,
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
