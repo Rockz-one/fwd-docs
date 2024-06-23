@@ -79,3 +79,18 @@
 .hero__title {
   white-space: nowrap;
 }
+
+.rainbowtext{
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  background-repeat: repeat;
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-color: #fff;
+  background-image: linear-gradient(130deg,#7bf0ba 15%,#44d4d2 30%,#c2a3fd 60%,#ff9c4a 75%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-filter: drop-shadow(2px 2px #552);
+          filter: drop-shadow(2px 2px #552);
+}

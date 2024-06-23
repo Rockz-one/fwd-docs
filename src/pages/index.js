@@ -17,7 +17,7 @@ function Terminal({port}) {
       <div className="terminalHeader">terminal</div>
       <div className="terminalBody">
         <code>
-          <p>$ <span className="textSelect command">ssh -R 80:localhost:{port} rockz.one</span></p>
+          <p>$ <span className="textSelect command">ssh -R 443:localhost:{port} rockz.one</span></p>
           <br />
           <p>Your service is avalable at https://randomstring.{base}</p>
         </code>
@@ -51,7 +51,7 @@ function Home() {
       description="Connect web applications running on your computer to the internet instantly">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
+          <h1 className="hero__title">{siteConfig.title} <span class="rainbowtext">BETA</span></h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <p>forward your web app running on port <input style={{width: "5em"}} type="number" id="port" name="port" min="1" max="65535" value={port} onChange={(event) => setPort(event.target.value)} /> now with</p>
           <Terminal port={port}/>

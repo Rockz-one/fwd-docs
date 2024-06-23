@@ -29,6 +29,7 @@ module.exports = {
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
+
         },
         {
           href: github,
