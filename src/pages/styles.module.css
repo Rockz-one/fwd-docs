@@ -35,3 +35,27 @@
   height: 200px;
   width: 200px;
 }
+
+.status{
+  display: grid;
+  grid-template-columns: auto auto;
+  height: 50px;
+  width: 100%;
+  justify-content: center;
+  grid-column-gap: 8px;
+}
+.up-status{
+  border-radius: 100%;
+  background-color: green;
+  width: 25px;
+  height: 25px;
+  line-height: 10px;
+  justify-self: center;
+}
+.down-status{
+  border-radius: 100%;
+  background-color: red;
+  width: 25px;
+  height: 25px;
+  justify-self: center;
+}

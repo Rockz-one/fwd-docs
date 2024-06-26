@@ -26,6 +26,23 @@ function Terminal({port}) {
   )
 }
 
+import{ useEffect } from "react";
+
+function Status() {
+  const [status, setStatus] = useState(null)
+  useEffect(() => {
+    fetch("https://fwd.rockz.one/")
+      .then((response) => response.json())
+      .then((data) => {setStatus(true)})
+      .catch((error) => setStatus(false));
+  }, []);
+  return (
+    <div className={styles["status"]}>
+      <span>fwd is {status ? "up" : "down"} </span><span className={`${status ? styles['up-status'] : styles['down-status']}`}> </span>
+    </div>
+  );
+}
+
 function Feature({imageUrl, title, description}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
@@ -55,6 +72,7 @@ function Home() {
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <p>forward your web app running on port <input style={{width: "5em"}} type="number" id="port" name="port" min="1" max="65535" value={port} onChange={(event) => setPort(event.target.value)} /> now with</p>
           <Terminal port={port}/>
+          <Status />
           <div className={styles.buttons}>
             <Link
               className={clsx(
