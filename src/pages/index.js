@@ -27,9 +27,11 @@ function Terminal({port}) {
 }
 
 import{ useEffect } from "react";
+import useIsBrowser from '@docusaurus/useIsBrowser';
 
 function Status() {
   const [status, setStatus] = useState(null)
+  const isBrowser = useIsBrowser()
   useEffect(() => {
     fetch("https://fwd.rockz.one/")
       .then((response) => response.json())
@@ -37,7 +39,7 @@ function Status() {
       .catch((error) => setStatus(false));
   }, []);
   return (
-    <div className={styles["status"]}>
+    <div key={String(isBrowser)} className={styles["status"]}>
       <span>fwd is {status ? "up" : "down"} </span><span className={`${status ? styles['up-status'] : styles['down-status']}`}> </span>
     </div>
   );
