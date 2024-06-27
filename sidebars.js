@@ -1,7 +1,7 @@
 module.exports = {
   docs: [
     'forward-http',
-    // 'custom-domains',
+    'custom-domains',
     'forward-tcp',
     'many-forwards',
     'questions'
