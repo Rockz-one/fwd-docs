@@ -17,7 +17,7 @@ function Terminal({port}) {
       <div className="terminalHeader">terminal</div>
       <div className="terminalBody">
         <code>
-          <p>$ <span className="textSelect command">ssh -R 443:localhost:{port} rockz.one</span></p>
+          <p>$ <span className="textSelect command">ssh -R 443:localhost:{port} nokey@rockz.one</span></p>
           <br />
           <p>Your service is avalable at https://randomstring.{base}</p>
         </code>
